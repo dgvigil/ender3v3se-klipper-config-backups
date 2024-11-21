@@ -1,0 +1,15 @@
+# Cura Start print
+; M190 S{material_bed_temperature_layer_0}
+; M109 S{material_print_temperature_layer_0}
+start_print BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
+
+
+
+# OrcaSlicer Start print
+M220 S100 ;Reset Feedrate 
+M221 S100 ;Reset Flowrate 
+START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
+
+
+# OrcaSlicer End print
+END_PRINT
